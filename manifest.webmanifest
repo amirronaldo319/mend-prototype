@@ -1,0 +1,14 @@
+{
+  "name": "Mend",
+  "short_name": "Mend",
+  "description": "A calmer way through parenting.",
+  "start_url": "/mend-prototype/",
+  "scope": "/mend-prototype/",
+  "display": "standalone",
+  "background_color": "#1A1E28",
+  "theme_color": "#1A1E28",
+  "icons": [
+    { "src": "/mend-prototype/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/mend-prototype/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
