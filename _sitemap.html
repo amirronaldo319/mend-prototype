@@ -6,7 +6,59 @@ html,body{background:#fff!important}
 html,body,#root,#root *{overflow:visible!important;height:auto!important;max-height:none!important}
 #root *{position:static!important}
 *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-}</style><style id="react-native-stylesheet">[stylesheet-group="0"]{}
+}</style><style id="mend-motion">
+@keyframes mend-drift-a {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(42px, 30px, 0) scale(1.08); }
+  100% { transform: translate3d(-18px, 46px, 0) scale(0.97); }
+}
+@keyframes mend-drift-b {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-40px, -26px, 0) scale(1.06); }
+  100% { transform: translate3d(22px, -44px, 0) scale(0.96); }
+}
+@keyframes mend-breathe-a {
+  0%, 100% { transform: scale(0.92); opacity: 0.55; }
+  50% { transform: scale(1.12); opacity: 1; }
+}
+@keyframes mend-breathe-b {
+  0%, 100% { transform: scale(1.08); opacity: 0.5; }
+  50% { transform: scale(0.94); opacity: 0.9; }
+}
+@keyframes mend-spin { to { transform: rotate(360deg); } }
+@keyframes mend-spin-rev { to { transform: rotate(-360deg); } }
+@keyframes mend-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+@keyframes mend-word-in {
+  from { opacity: 0; transform: translateY(0.32em); }
+  to { opacity: 1; transform: none; }
+}
+/*
+ * Keyboard focus: a warm ring that settles onto the control, with a dark halo so it shows on light
+ * and dark backgrounds alike. Only for keyboard focus (:focus-visible), never for a mouse click.
+ */
+[role="button"], [role="link"], [role="tab"], [role="radio"], [role="checkbox"] {
+  outline-offset: 7px;
+}
+[role="button"]:focus-visible, [role="link"]:focus-visible, [role="tab"]:focus-visible,
+[role="radio"]:focus-visible, [role="checkbox"]:focus-visible {
+  outline: 2px solid #E9A94F;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px rgba(20, 23, 31, 0.55);
+}
+@media (prefers-reduced-motion: no-preference) {
+  [role="button"], [role="link"], [role="tab"], [role="radio"], [role="checkbox"] {
+    transition: outline-offset 180ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+}
+/* Headings break into even lines instead of leaving one word alone. */
+h1, h2, h3, [role="heading"] { text-wrap: balance; }
+@media (prefers-reduced-motion: reduce) {
+  [data-mend-motion] { animation: none !important; }
+}
+</style><style id="react-native-stylesheet">[stylesheet-group="0"]{}
 body{margin:0;}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
@@ -435,5 +487,5 @@ input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-web
 @keyframes r-1pzkwqh{0%{transform:translateY(100%);}100%{transform:translateY(0%);}}
 @keyframes r-imtty0{0%{opacity:0;}100%{opacity:1;}}
 @keyframes r-q67da2{0%{transform:translateX(-100%);}100%{transform:translateX(400%);}}
-@keyframes r-t2lo5v{0%{opacity:1;}100%{opacity:0;}}</style><link rel="icon" href="/mend-prototype/favicon.ico"/><script type="module">globalThis.__EXPO_ROUTER_HYDRATE__=true;</script></head><body><noscript><main style="max-width:640px;margin:0 auto;padding:24px;color:#EDE6DA;font-family:Georgia, serif"><h1>Mend: a calmer way through parenting</h1><p>Practical guidance for difficult moments, ways to reconnect after conflict, family routines, and everyday connection. Mend is self-guided education, not therapy or an emergency service. It is in development and its wording has not yet been professionally reviewed.</p><p>Mend needs JavaScript to run. Nothing you enter is sent anywhere.</p><p>If anyone is in danger right now, call your local emergency number (911 in Canada and the US). In Canada or the US you can also call or text 988.</p></main></noscript><div id="root"><div class="css-g5y9jx r-13awgt0"></div></div><script src="/mend-prototype/_expo/static/js/web/entry-ebff814a420711adf94cba8228f51272.js" defer></script>
+@keyframes r-t2lo5v{0%{opacity:1;}100%{opacity:0;}}</style><link rel="icon" href="/mend-prototype/favicon.ico"/><script type="module">globalThis.__EXPO_ROUTER_HYDRATE__=true;</script></head><body><noscript><main style="max-width:640px;margin:0 auto;padding:24px;color:#EDE6DA;font-family:Georgia, serif"><h1>Mend: a calmer way through parenting</h1><p>Practical guidance for difficult moments, ways to reconnect after conflict, family routines, and everyday connection. Mend is self-guided education, not therapy or an emergency service. It is in development and its wording has not yet been professionally reviewed.</p><p>Mend needs JavaScript to run. Nothing you enter is sent anywhere.</p><p>If anyone is in danger right now, call your local emergency number (911 in Canada and the US). In Canada or the US you can also call or text 988.</p></main></noscript><div id="root"><div class="css-g5y9jx r-13awgt0"></div></div><script src="/mend-prototype/_expo/static/js/web/entry-575dfb81feceeda4aaf59371eaa85cbb.js" defer></script>
 </body></html>
