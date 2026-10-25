@@ -21,10 +21,10 @@
   ],
   "shortcuts": [
     {
-      "name": "Pause",
-      "short_name": "Pause",
-      "description": "Open a 30-second reset",
-      "url": "/mend-prototype/take-a-pause",
+      "name": "I’m about to react",
+      "short_name": "About to react",
+      "description": "Pause first, before you speak",
+      "url": "/mend-prototype/before",
       "icons": [
         {
           "src": "/mend-prototype/icon-192.png",
@@ -34,10 +34,36 @@
       ]
     },
     {
-      "name": "Quick Help",
-      "short_name": "Quick Help",
-      "description": "Help for this moment",
-      "url": "/mend-prototype/now",
+      "name": "I just yelled",
+      "short_name": "Just yelled",
+      "description": "A short repair you can say",
+      "url": "/mend-prototype/yelled",
+      "icons": [
+        {
+          "src": "/mend-prototype/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Help me find words",
+      "short_name": "Find words",
+      "description": "Calm words for right now",
+      "url": "/mend-prototype/guidance/say",
+      "icons": [
+        {
+          "src": "/mend-prototype/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Pause",
+      "short_name": "Pause",
+      "description": "Open a 30-second reset",
+      "url": "/mend-prototype/take-a-pause",
       "icons": [
         {
           "src": "/mend-prototype/icon-192.png",
